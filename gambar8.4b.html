@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        }
+
+        header, footer {
+            background-color: grey;
+            height: 16vh;
+            margin: 10px;
+
+        }
+
+        header, footer, aside {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #main {
+            display: flex;
+        }
+        
+        #main aside,
+        #main article {
+            height: 60vh;
+            flex: 0 0 20vw;
+            margin: 10px;
+        }
+
+
+        #main aside {
+            background-color: blueviolet;
+        }
+
+        #main article {
+            flex: 1;
+            background-color: bisque;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        #foto {
+            text-align: center;
+            display: flex;
+            margin: 15px;
+            height: 40vh;
+            padding: 15px;
+        }
+
+        img {
+            width: 300px;
+            padding: 1rem;
+            margin-top: 3rem;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h2>This is Header</h2>
+    </header>
+        <div id="main">
+            <aside>
+                <h2>This is Aside</h2>
+            </aside>
+            <article>
+                <h2>This is Articel</h2>
+                    <div id="foto">
+                        <img src="Img2/naruto1.jpg" alt="">
+                        <img src="Img2/naruto2.jpg" alt="">
+                        <img src="Img2/naruto3.jpg" alt="">
+                    </div>
+            </article>
+        </div>
+    <footer>
+        <h2>This is Footer</h2>
+    </footer>
+    
+</body>
+</html>
